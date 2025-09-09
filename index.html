@@ -3,8 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>About me</title>
   </head>
-  <main></main>
-  <body></body>
+  <body>
+    <main>
+      <h1>About me</h1>
+      <div class="mainContainer">
+        <article class="aboutMe">
+          <img src="./myPhoto.jpg" alt="my photo" class="myPhoto" />
+          <div class="typewriterContainer">
+            <p class="introTypewriter">
+          Hi! My name is Kateryna Boikova. I'm a professional translator seeking
+          career change opportunity in a fascinating world of web development.
+            </p>
+          </div>
+      </article>
+      <div class="accordionContainer">
+        <details class="accordionItem">
+          <summary class="accordionHeader">
+            <h2>Who am I?</h2>
+            <button class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="size-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </summary>
+          <p class="accordionItemContent">
+            Here I will write about my background
+          </p>
+        </details>
+
+        <details class="accordionItem">
+          <summary class="accordionHeader">
+            <h2>Why web development?</h2>
+            <button class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="size-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </summary>
+          <p class="accordionItemContent">
+            Here I will explain why I am interested in web development career
+          </p>
+        </details>
+
+        <details class="accordionItem">
+          <summary class="accordionHeader">
+            <h2>What do I know?</h2>
+            <button class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="size-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </summary>
+          <div class="accordionItemContent">
+            <ul class="tilesContainer">
+              <li class="tilesGroup">
+                <h3 class="tilesGroupHeader">Front-End Technologies</h3>
+                <div class="tilesGroupContainer"><div class="tile">
+                  <img src="./images/html.png" alt="html icon">
+                  <p>HTML</p>
+                </div>
+                <div class="tile">
+                  <img src="./images/css.png" alt="css icon"> 
+                  <p>CSS</p>
+                </div>
+                <div class="tile">
+                  <img src="./images/js.png" alt="javascript icon">
+                  <p>JavaScript</p>
+                </div>
+                <div class="tile">
+                  <img src="./images/react.png" alt="react icon">
+                  <p>ReactJS</p>
+                </div>
+                <div class="tile">
+                  <img src="./images/sass.png" alt="sass icon">
+                  <p>SASS</p>
+                </div>
+                
+              </div>
+                
+              </li>
+              <li class="tilesGroup">
+                <h3 class="tilesGroupHeader">Back-End Technologies</h3>
+                <div class="tilesGroupContainer"><div class="tile">
+                  <img src="./images/node.png" alt="node icon">
+                  <p>NodeJS</p>
+                </div>
+                <div class="tile">
+                  <img src="./images/express.png" alt="express icon">
+                  <p>ExpressJS</p>
+                </div>
+              <div class="tile">
+                  <img src="./images/docker.png" alt="docker icon">
+                  <p>Docker</p>
+              </div>
+              <div class="tile">
+                  <img src="./images/mongo.png" alt="mongo icon">
+                  <p>MongoDB</p>
+                </div>
+                <div class="tile">
+                  <img src="./images/mongoose.png" alt="mongoose icon">
+                  <p>Mongoose</p>
+                </div>
+                <div class="tile">
+                  <img src="./images/postgreSQL.png" alt="postgreSQL icon">
+                  <p>PostgreSQL</p>
+                </div>
+              </div>
+                
+              </li>
+            </ul>
+          </p>
+        </details>
+
+        <details class="accordionItem">
+          <summary class="accordionHeader">
+            <h2>Where can you find me?</h2>
+            <button class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="size-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </summary>
+          <p class="accordionItemContent">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/katerynaboikova/"
+                  >LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://github.com/KateBoikova">GitHub</a>
+              </li>
+            </ul>
+          </p>
+        </details>
+      </div></div>
+      
+    </main>
+    <footer>
+      Created by <a href="https://github.com/KateBoikova">Kateryna Boikova</a>
+    </footer>
+  </body>
 </html>
+
+
+
+
