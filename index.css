@@ -11,12 +11,16 @@
   box-sizing: border-box;
 }
 
-
 body {
-  font-family: 'Google Sans Code', monospace;
+  font-family: "Google Sans Code", monospace;
   color: #191212;
-  background: linear-gradient(90deg, #65bebb 0%, #baddd4 35%, #f7e5d8 65%,#fab7b8 100%);
-  /* background-size: 100%; */
+  background: linear-gradient(
+    90deg,
+    #65bebb 0%,
+    #baddd4 35%,
+    #f7e5d8 65%,
+    #fab7b8 100%
+  );
   background-attachment: fixed;
   height: 100vh;
   margin: 0;
@@ -40,7 +44,6 @@ h1 {
   display: flex;
   justify-content: space-between;
 
-
   background: var(--glass-like-background);
   border-radius: var(--glass-like-border-radius);
   box-shadow: var(--glass-like-box-shadow);
@@ -52,34 +55,21 @@ h1 {
 .myPhoto {
   height: 200px;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.40) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.40) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.4) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   margin: 20px;
   justify-items: center;
   position: relative;
 }
 
-
 .typewriterContainer {
   display: inline-block;
 }
 
-.introTypewriter {
-  overflow: hidden;
-  border-right: .15em solid #284c4b;
-  white-space: nowrap;
-  font-size: 1.1rem;
-  animation: typing 10s forwards;
-  
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent}
-  50% { border-color: #284c4b;}
+.typewriterContainer {
+  width: 50%;
+  padding: 10px;
 }
 
 .accordionContainer {
@@ -112,7 +102,6 @@ h1 {
   flex-direction: column;
 }
 
-
 .tilesGroup {
   text-decoration: none;
   display: flex;
@@ -132,7 +121,7 @@ h1 {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  transition: transform .2s;
+  transition: transform 0.2s;
 
   background: rgba(255, 255, 255, 0.21);
   border-radius: 16px;
@@ -156,8 +145,6 @@ h1 {
   font-size: smaller;
   text-align: center;
   margin: 0;
-
-  
 }
 
 .tilesGroupContainer {
@@ -167,8 +154,8 @@ h1 {
 }
 
 footer {
-  max-height: 30px;
   width: 100%;
+  max-height: 30px;
   padding: 5px;
   margin-top: 30px;
   color: #d1f8d7;
@@ -180,16 +167,31 @@ footer {
 a {
   text-decoration: none;
   color: #e1cdf7;
+  font-weight: 600;
+  transition: transform 0.2s;
 }
 
 a:hover {
   color: #a5f3b0;
+  text-shadow: 3px 3px 10px #284c4b;
 }
 
 @media only screen and (max-width: 360px) {
   .mainContainer {
     margin: 5px;
-
   }
 
+  .aboutMe {
+    flex-direction: column;
+  }
+
+  .myPhoto {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+  }
+
+  .introTypewriter {
+    font-size: 0.9rem;
+  }
 }
